@@ -49,7 +49,7 @@
 	margin: 56px auto 20px; /* top right bottom left */
 	box-shadow: 0 0 7px #122b6d; /*527bbd;*/
 	text-align: left;
-	background: #fff;
+	background: lightgrey;
 	padding: 14px 14px 14px 14px; /* top right bottom left */
 	z-index: 1;
 }
