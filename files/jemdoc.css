@@ -157,7 +157,7 @@ div.menu-item {
 div#toptitle {
 	padding-bottom: 0.2em;
 	margin-bottom: 1.5em;
-	border-bottom: 3px double gray;
+	border-bottom: 1px solid gray;
 }
 
 /* Reduce space if we begin the page with a title. */
@@ -189,7 +189,7 @@ h1, h2, h3 {
 	padding-bottom: 0.2em;
 	line-height: 1.0;
 	padding-top: 0.5em;
-	border-bottom: 1px solid #aaaaaa;
+	border-bottom: none;
 }
 
 h1 {
