@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F76XVSKN3V"></script>
+    <title>Yangcen Liu @ GaTech</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Yunhao Luo is a M.S. student at Brown University, with research interests on machine learning for embodied agents.">
+    <meta name="keywords" content="Yunhao Luo,Yunhao,Brown,Artifical Intelligence,Computer Vision,Robotics,Machine Learning,Cognitive Science">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="static/img/gatech.png">
+
+    <meta property="og:image" content="images/luo7.jpg">
+    <!-- <meta property="og:image" content="https://devinluo27.github.io/images/luo7.jpg"> -->
+
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+body{margin:0;padding:0;background-color:#eee;}
+a{color:#4e613e}
+a{color:#8d5638}
+a:hover{color:#566c7f}
+a:hover{color:#bc6262}
+#background{position:fixed;top:0;overflow:hidden;height:0}
+#wave-canvas{display:block;position:relative;top:0;left:5%;width:55%;min-width:850px;height:150px;border:0}
+#main{z-index:2;margin:0 auto;position:absolute;top:1%;width:100%;min-width:240px;text-align:center;}
+
+#main-content{background:rgba(238,238,238,0.95);padding:0;text-align:center;cursor:default;text-align:center;}
+#main-content{margin-left:6.5104167%;width:86.9791667%;}
+@media (min-width: 768px) {
+    #main-content{width:75%;min-width:668px;margin:0 auto} /* margin-left:50px */
+}
+@media (min-width: 1200px) {
+    #main-content{width:75%;max-width:900px;margin:0 auto}
+}
+/*#main-content {
+    width:86.9791667%;
+    margin: 0 auto;
+}
+@media (min-width: 768px) {
+    #main-content{width:66%;min-width:668px;}
+}
+@media (min-width: 1200px) {
+    #main-content{width:66%;max-width:900px;}
+}*/
+
+/* Luo's starts */
+.img-misc{margin-right:5px; margin-bottom:0px}
+.img-misc-mt{margin-top:12px;}
+.img-misc-mb{margin-bottom:12px;}
+/* Luo's ends */
+/* Avatar, Name, etc. */
+#main-content-container{margin:0 auto;padding:15px 0em 15px 0em;max-width:1080px;}
+@media (min-width: 768px) {
+    #main-content-container{padding:15px 0 15px 2em;}
+}
+#main-content-container .col-avatar{text-align:center}
+@media (min-width: 768px) {
+    #main-content-container .col-avatar{text-align:right}
+}
+#main-content-container .col-avatar .avatar{z-index:100;width:150px;height:150px;margin-top:0px;border-radius:100%;box-shadow:0 0 0 0.3em #fff;opacity:1;}
+
+#main-content-container .col-info{height:100%;align-items:center;display:-webkit-flex;height:150px}
+#main-info-container{padding-top:15px} /* around the name */
+#main-info-container .col-name{text-align:center}
+#main-info-container .col-name .textbox-info{display:inline-block;margin:0 auto;text-align:left}
+#main-info-container .col-name .name{margin:0;color:#566c7f;font-size:1.85em;font-family:"Source Sans Pro",Helvetica,sans-serif}
+#main-info-container .col-name .email{color:#666; font-size:14px}
+#main-info-container .col-link{text-align:center;margin:-5px 0 -25px;}
+#main-info-container .col-link ul {margin:0px auto auto;padding:0;list-style:none;text-align:center}
+#main-info-container .col-link li {display:inline-block;margin:auto;padding:0 10px;color:#ccc;line-height:10px}
+#main-info-container .col-link li a{width:45px;height:45px;color:#ccc;padding:0;font-size:45px;line-height:45px}
+#main-info-container .col-link li a:focus,
+#main-info-container .col-link li a:hover{text-decoration:none;cursor:hand}
+#main-info-container .col-link li a.border{border:1px solid #ccc;border-radius:100%;}
+#main-info-container .col-link li a.padding{padding:0px 0px;font-size:22px}
+
+/* Other */
+#main-more-container{background:#ffffff;width:100%;padding:0 30px}
+
+#main-bio-container{margin:auto;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px;font-size:1rem;line-height:1.4}
+#main-bio-container .subtitle{margin-top:30px;color:#566c7f}
+
+#misc-container{margin:0 0em;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px;font-size:1rem;line-height:1.4}
+/* #misc-container .subtitle{margin-top:30px;color:#566c7f} */
+
+#main-pub-container{margin:auto;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px}
+#main-pub-container .subtitle{color:#566c7f;}
+#main-pub-container .subtitle a {font-weight:400;font-size:18px}
+#main-pub-container .subtitle a.activated {color:#333333}
+#main-pub-container .subtitle a.activated:focus,
+#main-pub-container .subtitle a.activated:hover {text-decoration:none;cursor:initial}
+#main-pub-container .move-up {margin-top:-0.3cm}
+#main-pub-container .move-up-more {margin-top:-0.5cm}
+#main-pub-container .move-down {margin-top:0.8cm}
+
+#main-pub-container .subtitle-aux {font-size:1rem}
+#main-pub-container .subtitle-aux a.activated {color:#333333}
+#main-pub-container .subtitle-aux a.activated:focus,
+#main-pub-container .subtitle-aux a.activated:hover {text-decoration:none;cursor:initial}
+#main-pub-container .subtitle-aux .note{margin-left:1em;color:#999999;text-decoration:none;font-size:14px}
+
+#main-pub-card-container{}
+#main-pub-card-container>h5{margin-bottom: 20px}
+#main-pub-card-container .pub-card{width: 100%;padding-bottom:15px;font-size:1rem}
+#main-pub-card-container .pub-card .col-l{text-align:center;padding-top:10px}
+#main-pub-card-container .pub-card .col-r{padding-top:10px}
+#main-pub-card-container .pub-card img{width:100%;margin:0 auto}
+#main-pub-card-container .pub-card-body{width:100%;background:transparent;padding-left:0px}
+#main-pub-card-container .pub-card .title{font-weight:600;font-size:1rem;margin-bottom:4px;line-height:1.4}
+#main-pub-card-container .pub-card .authors{font-weight:400;color:#666666;margin-bottom:4px;line-height:1.4}
+#main-pub-card-container .pub-card .authors a{color:#666666}
+#main-pub-card-container .pub-card .authors u{color:#333333;font-weight:600;text-decoration:none}
+#main-pub-card-container .pub-card .conference{color:#333333;font-weight:600}
+#main-pub-card-container .pub-card .note{display:block;color:#999999;text-decoration:none;font-size:12px}
+#main-pub-card-container .pub-card .info{margin-bottom:0;}
+#main-pub-card-container .row{margin:0}
+#main-pub-card-container .col-l,
+#main-pub-card-container .col-r{vertical-align:top;display:inline-block;margin:0;padding-left:0px}
+
+#footer{padding:1.5em 0 1.5em;min-width:240px;background:#f4f4f4;opacity:0.95;font-size:14px;line-height:12px;text-align:left}
+#footer .container{max-width:540px;padding:0 45px}
+#footer .row{align-items:center}
+#footer .stat{width:90px;overflow:hidden;margin:0 auto;padding:0 15px;}
+#footer .copyright{flex-grow:1;margin:5px auto 5px;text-align:left;display:block;font-size:14px;line-height:1.4}
+#footer a{color:#666666}
+#footer a:hover{color:#333333}
+
+.bold{font-weight:600}
+.highlight{color:#BB2222;font-weight:600}
+.highlight:hover{color:#BB2222;font-weight:600}
+.hide{display:none}
+    </style>
+</head>
+
+<body>
+
+<!-- <img src="background.jpeg" id="background" class="" /> -->
+
+<div id="main">
+    <!--canvas id="wave-canvas"></canvas-->
+
+    <div id="main-content">
+        <div id="main-content-container" class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-3 col-avatar">
+                <img src="images/blue.jpg" class="avatar" title="Yangcen Liu"/>
+            </div>
+            <div class="col-sm-12 col-md-9 col-info">
+                <div id="main-info-container" class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-xl-6 col-name">
+                            <div class="textbox-info">
+                                <h1 class="name"><span>Yangcen Liu</span></h1>
+                                <p class="email">Email: yliu3735 [at] gatech [dot] edu <br>
+                                <!-- Twitter:  <a href="https://twitter.com/du_yilun">https://twitter.com/du_yilun</a> <br> -->
+                                <!-- Google Scholar:  -->
+                                <a href="https://scholar.google.com/citations?user=Xq-r3dIAAAAJ&hl=en&oi=ao">Google Scholar</a> /
+                                <a href="https://www.linkedin.com/in/yangcenliu/">linkedin</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main-more-container">
+        <div id="main-bio-container">
+            <p>
+                I'm currently a master student at <a href="https://www.gatech.edu/">
+                  Gorgia Institute of Technology</a>
+                from 2024 Fall, a member of <a href="https://faculty.cc.gatech.edu/~danfei/">Robot Learning and Reasoning (RL2) Lab</a> supervised by <a href="https://faculty.cc.gatech.edu/~danfei/">Prof. Danfei Xu</a>.
+              </p>
+        
+              <p>
+                Before that, I obtained my Bachelor Degree from <a href="https://en.uestc.edu.cn/">the University of Electronic Science and Technology of China</a>
+                from 2020 Fall, and I was fortunate to be a member of <a href="https://diggers.ai/">Data Intelligence Group</a> supervised by <a href="https://wenli-vision.github.io/">Prof. Wen Li</a>.
+              </p>
+        
+              <p>
+                I am working on the field of Embodied AI, and I am interested in how to use human priors (especially video demonstration) to make robots smarter.
+                My current research interests include but are not limited to 1) video processing, and 2) robot learning.
+              </p>
+
+              <p>
+                I'm <a href="https://www.16personalities.com/entp-personality">ENTP-A</a>. Outside academia, I love playing sports (Basketball, Badminton) and music (Saxophone), and travelling around the world.
+              </p>
+        </div>
+        
+        <div id="main-pub-container">
+            <h5 class="subtitle">Education
+            </h5>
+
+            <div id="main-pub-card-container" class="hide">
+
+            <div class="pub-card">
+                <div class="row">
+                    <div class="col-l col-xs-12 col-lg-3">
+                        <img src="data/gatech.png" width="100%" playsinline autoplay muted loop preload/>
+                    </div>
+                    <div class="col-r col-xs-12 col-lg-9">
+                        <div class="pub-card-body">
+                            <h5 class="title">Georgia Institute of Technology</h5>
+                            Aug 2024 -- June 2026 (Expected)
+                            <h6 class="authors">
+                                Master of Science in Robotics (College of Computing)
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pub-card">
+                <div class="row">
+                    <div class="col-l col-xs-12 col-lg-3">
+                        <img src="data/uestc_icon.png" width="100%" playsinline autoplay muted loop preload/>
+                    </div>
+                    <div class="col-r col-xs-12 col-lg-9">
+                        <div class="pub-card-body">
+                            <h5 class="title">University of Electronic Science and Technology of China </h5>
+                            Sep 2020 -- June 2024
+                            <h6 class="authors">
+                                Bachelor of Engineering in Artificial Intelligence (College of Computer Science)
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+        
+        <div id="main-pub-container">
+            <h5 class="subtitle">Publications & Preprints
+            </h5>
+
+            <div id="main-pub-card-container">
+                <div class="pub-card" data-year="2023">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/Pseudo.png" width="100%" playsinline autoplay muted loop preload/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Bridging the Gap: From Weak to Full Supervision in Action Localization with PseudoFormer </h5>
+                                <h6 class="authors">
+                                    Ziyi Liu<sup>*</sup>,
+                                    <u>Yangcen Liu</u><sup>*</sup>,
+                                </h6>
+                                <p class="info">
+                                    <span class="conference">Under Review</span> 
+                                    <!-- <br> -->
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-card" data-year="2023">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/AAGN.png" width="100%" playsinline autoplay muted loop preload/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Structure-Aware Human Body Reshaping with Adaptive Affinity-Graph Network </h5>
+                                <h6 class="authors">
+                                    Qiwen Deng<sup>*</sup>,
+                                    <u>Yangcen Liu</u><sup>*</sup>,
+                                    Wen Li, Guoqing Wang
+                                </h6>
+                                <p class="info">
+                                    <span class="conference">Under Review</span> 
+                                    /
+                                    <a href="http://export.arxiv.org/abs/2404.13983">Paper</a>
+                                    <!-- <br> -->
+                                    <br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="pub-card">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/STAT.png" width="100%" playsinline autoplay muted loop preload/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">STAT: Towards Generalizable Temporal Action Localization </h5>
+                                <h6 class="authors">
+                                    <u>Yangcen Liu</u>, Ziyi Liu, Yuanhao Zhai, Wen Li, David Doerman, Junsong Yuan
+                                </h6>
+                                <p class="info">
+                                    <span class="conference">Under Review</span> /
+                                    <a href="http://export.arxiv.org/abs/2404.13311">Paper</a> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-card">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/DAIR.png" width="100%" playsinline autoplay muted loop preload/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Simultaneous Detection and Interaction Reasoning for Object-Centric Action Recognition </h5>
+                                <h6 class="authors">
+                                    Xunsong Li, Pengzhan Sun, <u>Yangcen Liu</u>, Lixin Duan, Wen Li
+                                </h6>
+                                <p class="info">
+                                    <span class="conference">IEEE Transactions on Multimedia 2024</span> /
+                                    <a href="https://arxiv.org/abs/2404.11903">Paper</a> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- <div id=""> -->
+        <!-- </div> -->
+
+        
+
+
+        <div id="main-pub-container">
+            <h5 class="subtitle">Experience</h5>
+
+            <div id="main-pub-card-container">
+
+                <div class="pub-card" data-topic="experience" data-selected="False">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/gatech.png" width="100%" playsinline autoplay muted loop preload/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Research Intern, Georgia Institute of Technology</h5>
+                                Aug 2024 -- Now
+                                <p class="info">
+                                    Lab: <a href="https://faculty.cc.gatech.edu/~danfei/">Robot Learning and Reasoning Lab</a><br>
+                                    Supervisor: <a href="https://faculty.cc.gatech.edu/~danfei/">Prof. Danfei</a> &nbsp;
+                                    Collaborated with <a
+                                      href="https://sites.google.com/view/shuocheng">Shuo Cheng</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="pub-card" data-topic="experience" data-selected="False">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/xiaohongshu.png" width="100%" playsinline autoplay muted loop preload/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">AIGC Algorithm Researcher Intern, RED</h5>
+                                Jul 2023 -- Sep 2023
+                                <p class="info">
+                                    <!-- communication platform for enterprises -->
+                                    Worked for <a href="https://www.xiaohongshu.com/explore?language=en-US">Little Red Book (Xiaohongshu)</a>, is a social media and e-commerce platform with 300M+ active users (up to 2024)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pub-card" data-topic="experience" data-selected="False">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/buffalo.png" width="100%" playsinline autoplay muted loop preload/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Research Intern, University at Buffalo (SUNY)</h5>
+                                March 2023 -- Dec 2023 <!-- , Spring Semester -->
+                                <p class="info">
+                                    Lab: <a href="https://cse.buffalo.edu/~jsyuan/team.html">Visual Computing Lab</a><br>
+                                    Supervisor: <a href="https://cse.buffalo.edu/~jsyuan/index.html">Prof. Junsong Yuan</a> &nbsp;
+                                    Collaborated with <a href="https://scholar.google.com/citations?user=m2k89xgAAAAJ">Prof. Ziyi Liu</a>, <a
+                                      href="https://www.yhzhai.com/">Yuanhao Zhai</a> and <a href="https://cse.buffalo.edu/~doermann/">Prof.
+                                      David Doermann</a><br>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+                
+
+        </div>
+
+        </div>
+    </div>
+    <!-- <div id="main-more-container">        
+    </div> -->
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="copyright" style="text-align: center;">
+                    Website template from <a href="https://devinluo27.github.io/">Yunhao Luo</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- -------------------------------------------- -->
+<!-- -------------------------------------------- -->
+<!-- -------------------------------------------- -->
+
+
+
+<!-- jQuery first, then Tether, then Bootstrap JS. -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script type="text/javascript" src="static/js/jquery.color.min.js"></script>
+<script type="text/javascript">
+
+$.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+var allPublications = null;
+
+function publicationBySelected() {
+    var a = $("#publication-by-selected")
+    if (a.hasClass("activated")) {
+        return ;
+    }
+
+    $("#main-pub-container .subtitle a").removeClass("activated");
+    $("#main-pub-container .subtitle-aux a").removeClass("activated");
+    a.addClass("activated");
+
+    $("#main-pub-card-container").html("");
+    for (var pubId = 0; pubId < allPublications.length; pubId++) {
+        var pub = $(allPublications[pubId]);
+        if (pub.data("selected") == true) {
+            $("#main-pub-card-container").append(pub);
+        }
+    }
+}
+
+function publicationByDate() {
+    var a = $("#publication-by-date")
+    if (a.hasClass("activated")) {
+        return ;
+    }
+
+    $("#main-pub-container .subtitle a").removeClass("activated");
+    $("#main-pub-container .subtitle-aux a").removeClass("activated");
+    a.addClass("activated");
+
+    $("#main-pub-card-container").html("");
+    for (var pubId = 0; pubId < allPublications.length; pubId++) {
+        if (pubId == 0 || $(allPublications[pubId-1]).data("year") != $(allPublications[pubId]).data("year")) {
+            var year = $(allPublications[pubId]).data("year");
+            $("#main-pub-card-container").append($("<h5 id='year-" + year.toString() + "'>" + year.toString() + "</h5>"));
+        }
+        $("#main-pub-card-container").append(allPublications[pubId]);
+    }
+}
+
+function publicationByTopicInner() {
+    var a = $("#publication-by-topic")
+    if (a.hasClass("activated")) {
+        return ;
+    }
+    $("#main-pub-container .subtitle a").removeClass("activated");
+    a.addClass("activated");
+
+    $("#main-pub-card-container").html("");
+    for (var topicId in allTopics) {
+        var topic = allTopics[topicId].name;
+        var topicTitle = allTopics[topicId].title;
+        // var topicTitle = topic.split("-").map(function (a) { return a[0].toUpperCase() + a.substr(1).toLowerCase(); }).join(" ");
+        $("#main-pub-card-container").append($("<h5 id='topic-" + topic + "'>" + topicTitle + "</h5>"));
+        for (var pubId = 0; pubId < allPublications.length; pubId++) {
+            var pub = $(allPublications[pubId]);
+            if (pub.data("topic").indexOf(topic) != -1) {
+                $("#main-pub-card-container").append(pub);
+            }
+        }
+    }
+}
+
+function publicationByTopicSpecificInner(a) {
+    if ($(a).hasClass("activated")) {
+        return false;
+    }
+
+    $("#main-pub-container .subtitle-aux a").removeClass("activated");
+    $(a).addClass("activated");
+}
+
+function publicationByTopic() {
+    publicationByTopicInner();
+    publicationByTopicSpecificInner($("#main-pub-container .subtitle-aux a:first"));
+    return true;
+}
+
+function publicationByTopicSpecific(a) {
+    publicationByTopicInner();
+    publicationByTopicSpecificInner(a);
+
+    var hash = a.hash;
+    $(hash).prop('id', hash.substr(1) + '-noscroll');
+    window.location.hash = hash;
+    $(hash + '-noscroll').prop('id', hash.substr(1));
+
+    if (!$(hash).isInViewport()) {
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 1000, function(){
+        });
+    }
+
+    return false;
+}
+
+$(function() {
+    getRealSize = function(bgImg) {
+        var img = new Image();
+        img.src = bgImg.attr("src");
+        var width = img.width,
+            height = img.height;
+        return {
+            width: width,
+            height: height
+        }
+    };
+
+    getRealWindowSize = function() {
+        var winWidth = null,
+            winHeight = null;
+        if (window.innerWidth) winWidth = window.innerWidth;
+        else if ((document.body) && (document.body.clientWidth)) winWidth = document.body.clientWidth;
+        if (window.innerHeight) winHeight = window.innerHeight;
+        else if ((document.body) && (document.body.clientHeight)) winHeight = document.body.clientHeight;
+        if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
+            winHeight = document.documentElement.clientHeight;
+            winWidth = document.documentElement.clientWidth
+        }
+        return {
+            width: winWidth,
+            height: winHeight
+        }
+    };
+
+    fullBg = function() {
+        var bgImg = $("#background");
+        var mainContainer = $("#main");
+        var firstFire = null;
+
+        function resizeImg() {
+            var realSize = getRealSize(bgImg);
+            var imgWidth = realSize.width;
+            var imgHeight = realSize.height;
+
+            if (imgWidth == 0 || imgHeight == 0) {
+                setTimeout(function() {
+                    resizeImg();
+                }, 200);
+            }
+
+            console.log(realSize);
+            var realWinSize = getRealWindowSize();
+            var winWidth = realWinSize.width;
+            var winHeight = realWinSize.height;
+            var widthRatio = winWidth / imgWidth;
+            var heightRatio = winHeight / imgHeight;
+            console.log(realWinSize);
+            if (widthRatio > heightRatio) {
+                bgImg.width(imgWidth * widthRatio + 'px').height(imgHeight * widthRatio + 'px').css({'top':
+                    -(imgHeight * widthRatio - winHeight) / 10 * 5 + 'px', 'left': '0'})
+            } else {
+                bgImg.width(imgWidth * heightRatio + 'px').height(imgHeight * heightRatio + 'px').css({'left':
+                    -(imgWidth * heightRatio - winWidth) / 10 * 3 + 'px', 'top': '0'})
+            }
+            // mainContainer.css({
+            //     width: winWidth,
+            //     height: winHeight
+            // });
+        }
+
+        resizeImg();
+        window.onresize = function() {
+            if (firstFire === null) {
+                firstFire = setTimeout(function() {
+                    resizeImg();
+                    firstFire = null
+                }, 100)
+            }
+        }
+    };
+
+    targetColor = $("#main-content-container .col-info .name").css("color");
+    animatedLink = function(speed) {
+        $("#main-content-container .col-link li").hover(function() {
+            $(this).find('.icon').animate({
+                color: targetColor,
+                borderColor: targetColor
+            }, speed);
+            $(this).find('.caption').animate({
+                color: targetColor
+            })
+        }, function() {
+            $(this).find('.icon').animate({
+                borderColor: '#cccccc',
+                color: '#cccccc'
+            }, speed);
+            $(this).find('.caption').animate({
+                color: '#cccccc'
+            })
+        })
+    };
+
+    fullBg();
+    animatedLink(400);
+
+    allPublications = $("#main-pub-card-container .pub-card");
+    allTopicsLink = $("#main-pub-container .subtitle-aux a");
+    allTopics = [];
+    for (var topicId = 0; topicId < allTopicsLink.length; topicId++) {
+        allTopics.push({name: $(allTopicsLink[topicId]).data("topic"), title: $(allTopicsLink[topicId]).html()});
+    }
+
+    $("#publication-by-selected").click();
+    // $("#publication-by-date").click();
+    $("#main-pub-card-container").removeClass("hide");
+});
+</script>
+</body>
+</html>
