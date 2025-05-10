@@ -206,7 +206,7 @@ a:hover{color:#bc6262}
             <div class="pub-card">
                 <div class="row">
                     <div class="col-l col-xs-12 col-lg-3">
-                        <img src="data/gatech.png" width="100%" playsinline autoplay muted loop preload/>
+                        <img src="data/gatech.png" width="100%" class="pub-img" playsinline autoplay muted loop preload/>
                     </div>
                     <div class="col-r col-xs-12 col-lg-9">
                         <div class="pub-card-body">
@@ -223,7 +223,7 @@ a:hover{color:#bc6262}
             <div class="pub-card">
                 <div class="row">
                     <div class="col-l col-xs-12 col-lg-3">
-                        <img src="data/uestc_icon.png" width="100%" playsinline autoplay muted loop preload/>
+                        <img src="data/uestc_icon.png" width="100%" class="pub-img" playsinline autoplay muted loop preload/>
                     </div>
                     <div class="col-r col-xs-12 col-lg-9">
                         <div class="pub-card-body">
@@ -239,133 +239,197 @@ a:hover{color:#bc6262}
                 
         </div>
         
+        <style>
+            .pub-type-header {
+                font-size: 20px;
+                font-weight: 600;
+                margin-top: 20px;
+                margin-bottom: 10px;
+                padding-left: 8px;
+                border-left: 5px solid #e74c3c;
+                color: #2c3e50;
+            }
+        
+            .main-pub-card-container {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+        
+            .pub-card {
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.06);
+                background-color: #fafafa;
+            }
+        
+            /* Ensure internal elements don't break the margin consistency */
+            .pub-card * {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        
+            .pub-card-body h5.title {
+                font-size: 16px;
+                font-weight: 600;
+                color: #34495e;
+                margin-bottom: 8px;
+            }
+        
+            .pub-card-body h6.authors {
+                font-size: 14px;
+                color: #555;
+                margin-bottom: 6px;
+            }
+        
+            .pub-card-body p.info {
+                font-size: 14px;
+                color: #666;
+            }
+        
+            .conference {
+                font-weight: 500;
+                color: #2980b9;
+            }
+        
+            .pub-img {
+                width: 100%;
+                height: auto;
+                border-radius: 4px;
+                object-fit: cover;
+                margin-bottom: 10px;
+                background-color: #fff; /* ✅ 白色背景填补透明 */
+            }
+        
+            .col-l {
+                padding-right: 5px;
+            }
+        
+            .col-r {
+                padding-left: 5px;
+            }
+        
+            @media (max-width: 768px) {
+                .col-l,
+                .col-r {
+                    padding: 0 !important;
+                }
+            }
+        </style>
+        
+        
         <div id="main-pub-container">
-            <h5 class="subtitle">Publications & Preprints
-            </h5>
-
-            <div id="main-pub-card-container">
+            <h5 class="subtitle">Publications & Preprints</h5>
+        
+            <!-- Robotics Section -->
+            <h6 class="pub-type-header">Robotics</h6>
+            <div class="main-pub-card-container">
                 <div class="pub-card" data-year="2025">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/ACT.png" width="100%" playsinline autoplay muted loop preload/>
+                            <img src="data/projects/ACT.png" width="100%" class="pub-img"/>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">ImMimic: Cross-Domain Imitation from Human
-                                    Videos via Mapping and Interpolation</h5>
+                                <h5 class="title">ImMimic: Cross-Domain Imitation from Human Videos via Mapping and Interpolation</h5>
                                 <h6 class="authors">
-                                    <u>Yangcen Liu</u><sup>*</sup>,
-                                    Woochul Shin<sup>*</sup>,
-                                    Yunhai Han,
-                                    Zhenyang Chen,
-                                    Harish Ravichander,
-                                    Danfei Xu<sup>†</sup>
-
+                                    <u>Yangcen Liu</u><sup>*</sup>, Woochul Shin<sup>*</sup>, Yunhai Han, Zhenyang Chen, Harish Ravichander, Danfei Xu<sup>†</sup>
                                 </h6>
                                 <p class="info">
                                     <span class="conference">In submission</span> /
                                     <a href="https://sites.google.com/view/immimic">Project Page</a>
-                                    <!-- <br> -->
-                                    <br>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-
+            </div>
+        
+            <!-- Video Processing Section -->
+            <h6 class="pub-type-header">Video Processing</h6>
+            <div class="main-pub-card-container">
                 <div class="pub-card" data-year="2024">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/PSEU.png" width="100%" playsinline autoplay muted loop preload/>
+                            <img src="data/projects/PSEU.png" width="100%" class="pub-img"/>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">Bridge the Gap: From Weak to Full Supervision for Temporal Action Localization with PseudoFormer </h5>
-                                <h6 class="authors">
-                                    Ziyi Liu<sup>†</sup>,
-                                    <u>Yangcen Liu</u>
-                                </h6>
+                                <h5 class="title">Bridge the Gap: From Weak to Full Supervision for Temporal Action Localization with PseudoFormer</h5>
+                                <h6 class="authors">Ziyi Liu<sup>†</sup>, <u>Yangcen Liu</u></h6>
                                 <p class="info">
-                                    <span class="conference">IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) 2025</span> 
-                                    /
+                                    <span class="conference">CVPR 2025</span> /
                                     <a href="http://export.arxiv.org/abs/2404.13983">Paper</a>
-                                    <br>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-
+        
+                <div class="pub-card">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/STAT.png" width="100%" class="pub-img"/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">STAT: Towards Generalizable Temporal Action Localization</h5>
+                                <h6 class="authors"><u>Yangcen Liu</u>, Ziyi Liu<sup>†</sup>, Yuanhao Zhai, Wen Li<sup>†</sup>, David Doerman, Junsong Yuan</h6>
+                                <p class="info">
+                                    <span class="conference">In Submission</span> /
+                                    <a href="http://export.arxiv.org/abs/2404.13311">Paper</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="pub-card">
+                    <div class="row">
+                        <div class="col-l col-xs-12 col-lg-3">
+                            <img src="data/projects/DAIR.png" width="100%" class="pub-img"/>
+                        </div>
+                        <div class="col-r col-xs-12 col-lg-9">
+                            <div class="pub-card-body">
+                                <h5 class="title">Simultaneous Detection and Interaction Reasoning for Object-Centric Action Recognition</h5>
+                                <h6 class="authors">Xunsong Li, Pengzhan Sun, <u>Yangcen Liu</u>, Lixin Duan, Wen Li<sup>†</sup></h6>
+                                <p class="info">
+                                    <span class="conference">TMM 2025</span> /
+                                    <a href="https://arxiv.org/abs/2404.11903">Paper</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- AIGC Section -->
+            <h6 class="pub-type-header">AIGC</h6>
+            <div class="main-pub-card-container">
                 <div class="pub-card" data-year="2023">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/AAGN.png" width="100%" playsinline autoplay muted loop preload/>
+                            <img src="data/projects/AAGN.png" width="100%" class="pub-img"/>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">Structure-Aware Human Body Reshaping with Adaptive Affinity-Graph Network </h5>
-                                <h6 class="authors">
-                                    <u>Yangcen Liu</u><sup>*</sup>,
-                                    Qiwen Deng<sup>*</sup>,
-                                    Wen Li, Guoqing Wang<sup>†</sup>
-                                </h6>
+                                <h5 class="title">Structure-Aware Human Body Reshaping with Adaptive Affinity-Graph Network</h5>
+                                <h6 class="authors"><u>Yangcen Liu</u><sup>*</sup>, Qiwen Deng<sup>*</sup>, Wen Li, Guoqing Wang<sup>†</sup></h6>
                                 <p class="info">
-                                    <span class="conference">IEEE/CVF Winter Conference on Applications of Computer Vision (WACV) 2025</span> 
-                                    /
+                                    <span class="conference">WACV 2025</span> /
                                     <a href="http://export.arxiv.org/abs/2404.13983">Paper</a>
-                                    <!-- <br> -->
-                                    <br>
                                 </p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
-                <div class="pub-card">
-                    <div class="row">
-                        <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/STAT.png" width="100%" playsinline autoplay muted loop preload/>
-                        </div>
-                        <div class="col-r col-xs-12 col-lg-9">
-                            <div class="pub-card-body">
-                                <h5 class="title">STAT: Towards Generalizable Temporal Action Localization </h5>
-                                <h6 class="authors">
-                                    <u>Yangcen Liu</u>, Ziyi Liu<sup>†</sup>, Yuanhao Zhai, Wen Li<sup>†</sup>, David Doerman, Junsong Yuan
-                                </h6>
-                                <p class="info">
-                                    <span class="conference">In Submission</span> /
-                                    <a href="http://export.arxiv.org/abs/2404.13311">Paper</a> 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pub-card">
-                    <div class="row">
-                        <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/DAIR.png" width="100%" playsinline autoplay muted loop preload/>
-                        </div>
-                        <div class="col-r col-xs-12 col-lg-9">
-                            <div class="pub-card-body">
-                                <h5 class="title">Simultaneous Detection and Interaction Reasoning for Object-Centric Action Recognition </h5>
-                                <h6 class="authors">
-                                    Xunsong Li, Pengzhan Sun, <u>Yangcen Liu</u>, Lixin Duan, Wen Li<sup>†</sup>
-                                </h6>
-                                <p class="info">
-                                    <span class="conference">IEEE Transactions on Multimedia (TMM) 2025</span> /
-                                    <a href="https://arxiv.org/abs/2404.11903">Paper</a> 
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
             </div>
         </div>
-        <!-- <div id=""> -->
-        <!-- </div> -->
+        
 
         
 
@@ -378,11 +442,11 @@ a:hover{color:#bc6262}
                 <div class="pub-card" data-topic="experience" data-selected="False">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/gatech.png" width="100%" playsinline autoplay muted loop preload/>
+                            <img src="data/gatech.png" width="100%" class="pub-img" playsinline autoplay muted loop preload/>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">Research Intern, Georgia Institute of Technology</h5>
+                                <h5 class="title">Research Assistant, Georgia Institute of Technology</h5>
                                 Aug 2024 -- Now
                                 <p class="info">
                                     Lab: <a href="https://faculty.cc.gatech.edu/~danfei/">Robot Learning and Reasoning Lab</a><br>
@@ -397,7 +461,7 @@ a:hover{color:#bc6262}
                 <div class="pub-card" data-topic="experience" data-selected="False">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/xiaohongshu.png" width="100%" playsinline autoplay muted loop preload/>
+                            <img src="data/xiaohongshu.png" width="100%" class="pub-img" playsinline autoplay muted loop preload/>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -415,11 +479,11 @@ a:hover{color:#bc6262}
                 <div class="pub-card" data-topic="experience" data-selected="False">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/buffalo.png" width="100%" playsinline autoplay muted loop preload/>
+                            <img src="data/buffalo.png" width="100%" class="pub-img" playsinline autoplay muted loop preload/>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">Research Intern, University at Buffalo (SUNY)</h5>
+                                <h5 class="title">Research Assistant, University at Buffalo (SUNY)</h5>
                                 March 2023 -- Dec 2023 <!-- , Spring Semester -->
                                 <p class="info">
                                     Lab: <a href="https://cse.buffalo.edu/~jsyuan/team.html">Visual Computing Lab</a><br>
@@ -436,11 +500,11 @@ a:hover{color:#bc6262}
                 <div class="pub-card" data-topic="experience" data-selected="False">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/uestc_icon.png" width="100%" playsinline autoplay muted loop preload/>
+                            <img src="data/uestc_icon.png" width="100%" class="pub-img" playsinline autoplay muted loop preload/>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
-                                <h5 class="title">Research Intern, University of Electronic Science and Technology of China</h5>
+                                <h5 class="title">Research Assistant, University of Electronic Science and Technology of China</h5>
                                 March 2022 -- Dec 2022 <!-- , Spring Semester -->
                                 <p class="info">
                                     Lab: <a href="">Data Intelligence Group</a><br>
@@ -489,18 +553,12 @@ a:hover{color:#bc6262}
         
 
         </div>
+
+        <div style="height: 20px;"></div>
     </div>
-    <!-- <div id="main-more-container">        
-    </div> -->
-    <div id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="copyright" style="text-align: center;">
-                    Website template from <a href="https://devinluo27.github.io/">Yunhao Luo</a>.
-                </div>
-            </div>
-        </div>
-    </div>
+    
+
+
 </div>
 
 <!DOCTYPE html>
@@ -778,5 +836,17 @@ $(function() {
     $("#main-pub-card-container").removeClass("hide");
 });
 </script>
+
+
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="copyright" style="text-align: center;">
+                Website template from <a href="https://devinluo27.github.io/">Yunhao Luo</a>.
+            </div>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
