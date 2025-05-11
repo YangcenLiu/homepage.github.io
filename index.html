@@ -260,14 +260,15 @@ a:hover{color:#bc6262}
                 width: 100%;
                 margin-top: 20px;
                 margin-bottom: 20px;
-                padding-left: 4px;
-                padding-right: 4px;
+                padding-left: 2px;
+                padding-right: 2px;
                 padding-top: 10px;
                 padding-bottom: 10px;
                 border: 1px solid #ddd;
                 border-radius: 8px;
                 box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.06);
                 background-color: #fafafa;
+                box-sizing: border-box; /* ✅ 防止 padding+border 撑破总宽度 */
             }
         
             /* Ensure internal elements don't break the margin consistency */
@@ -301,11 +302,12 @@ a:hover{color:#bc6262}
         
             .pub-img {
                 width: 100%;
+                max-width: 100%; /* ✅ 避免在小屏上撑出卡片 */
                 height: auto;
                 border-radius: 4px;
                 object-fit: cover;
                 margin-bottom: 10px;
-                background-color: #fff; /* ✅ 白色背景填补透明 */
+                background-color: #fff; /* ✅ 白色背景填补透明区域 */
             }
         
             .col-l {
@@ -316,9 +318,15 @@ a:hover{color:#bc6262}
                 padding-left: 8px;
             }
         
+            .row {
+                display: flex;
+                flex-wrap: wrap; /* ✅ 小屏下自动换行 */
+            }
+        
             @media (max-width: 768px) {
                 .col-l,
                 .col-r {
+                    width: 100%;         /* ✅ 竖排布局 */
                     padding: 0 !important;
                 }
             }
