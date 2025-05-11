@@ -330,6 +330,21 @@ a:hover{color:#bc6262}
                     padding: 0 !important;
                 }
             }
+
+        .pub-img-wrapper {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;          /* ✅ 裁剪超出圆角部分 */
+        }
+
+        .pub-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            background-color: #fff;
+        }
+
         </style>
         
         
@@ -342,8 +357,10 @@ a:hover{color:#bc6262}
                 <div class="pub-card" data-year="2025">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
-                            <img src="data/projects/ACT.png" width="100%" class="pub-img"/>
-                        </div>
+                            <div class="pub-img-wrapper">
+                                <img src="data/projects/ACT.png" class="pub-img" />
+                            </div>
+                        </div>                        
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
                                 <h5 class="title">ImMimic: Cross-Domain Imitation from Human Videos via Mapping and Interpolation</h5>
@@ -366,7 +383,9 @@ a:hover{color:#bc6262}
                 <div class="pub-card" data-year="2024">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
+                            <div class="pub-img-wrapper">
                             <img src="data/projects/PSEU.png" width="100%" class="pub-img"/>
+                            </div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -384,7 +403,9 @@ a:hover{color:#bc6262}
                 <div class="pub-card">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
+                            <div class="pub-img-wrapper">
                             <img src="data/projects/STAT.png" width="100%" class="pub-img"/>
+                        </div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -402,7 +423,9 @@ a:hover{color:#bc6262}
                 <div class="pub-card">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
+                            <div class="pub-img-wrapper">
                             <img src="data/projects/DAIR.png" width="100%" class="pub-img"/>
+                            </div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
@@ -424,7 +447,9 @@ a:hover{color:#bc6262}
                 <div class="pub-card" data-year="2023">
                     <div class="row">
                         <div class="col-l col-xs-12 col-lg-3">
+                            <div class="pub-img-wrapper">
                             <img src="data/projects/AAGN.png" width="100%" class="pub-img"/>
+                            </div>
                         </div>
                         <div class="col-r col-xs-12 col-lg-9">
                             <div class="pub-card-body">
