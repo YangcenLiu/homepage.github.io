@@ -1,220 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-F76XVSKN3V"></script>
-    <title>Yangcen Liu @ GaTech</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Yangcen Liu is a M.S. student at Gorgia Tech, with research interests on machine learning for embodied agents.">
-    <meta name="keywords" content="Yangcen Liu,Yangcen,Gatech,Artifical Intelligence,Computer Vision,Robotics,Machine Learning,Cognitive Science">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="static/img/gatech.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F76XVSKN3V"></script>
+  <title>Yangcen Liu @ GaTech</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Yangcen Liu is a M.S. student at Georgia Tech, with research interests on machine learning for embodied agents.">
+  <meta name="keywords" content="Yangcen Liu,Yangcen,Gatech,Artificial Intelligence,Computer Vision,Robotics,Machine Learning">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="shortcut icon" href="static/img/gatech.png">
+  <meta property="og:image" content="images/luo7.jpg">
 
-    <meta property="og:image" content="images/luo7.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-    <style type="text/css">
-body{margin:0;padding:0;background-color:#eee;}
-a{color:#4e613e}
-a{color:#8d5638}
-a:hover{color:#566c7f}
-a:hover{color:#bc6262}
-#background{position:fixed;top:0;overflow:hidden;height:0}
-#wave-canvas{display:block;position:relative;top:0;left:5%;width:55%;min-width:850px;height:150px;border:0}
-#main{z-index:2;margin:0 auto;position:absolute;top:1%;width:100%;min-width:240px;text-align:center;}
+  <style type="text/css">
+  :root{
+    --bg:#faf7f2;
+    --text:#262626;
+    --muted:#6b6b6b;
+    --line:#eae4db;
+    --link:#224e7a;
+    --link-hover:#163a5b;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;padding:0;background:var(--bg);
+    color:var(--text);
+    font-family: "EB Garamond", Georgia, serif;
+    font-size:16px; line-height:1.85;
+  }
+  a{ color:var(--link); text-decoration:none; }
+  a:hover{ color:var(--link-hover); text-decoration:underline; }
+  .hide{display:none}
 
-#main-content{background:rgba(238,238,238,0.95);padding:0;text-align:center;cursor:default;text-align:center;}
-#main-content{margin-left:6.5104167%;width:86.9791667%;}
-@media (min-width: 768px) {
-    #main-content{width:75%;min-width:668px;margin:0 auto} /* margin-left:50px */
-}
-@media (min-width: 1200px) {
-    #main-content{width:75%;max-width:900px;margin:0 auto}
-}
-/*#main-content {
-    width:86.9791667%;
-    margin: 0 auto;
-}
-@media (min-width: 768px) {
-    #main-content{width:66%;min-width:668px;}
-}
-@media (min-width: 1200px) {
-    #main-content{width:66%;max-width:900px;}
-}*/
+  .site-layout{
+    display:grid;
+    grid-template-columns:0.2fr 3fr;
+    gap:48px;
+    max-width:1120px;
+    margin:0 auto;
+    padding:48px 24px 24px;
+  }
+  @media (min-width:900px){
+    .site-layout{ grid-template-columns:220px minmax(0,3fr); gap:70px; }
+  }
 
-/* Luo's starts */
-.img-misc{margin-right:5px; margin-bottom:0px}
-.img-misc-mt{margin-top:12px;}
-.img-misc-mb{margin-bottom:12px;}
-/* Luo's ends */
-/* Avatar, Name, etc. */
-#main-content-container{margin:0 auto;padding:15px 0em 15px 0em;max-width:1080px;}
-@media (min-width: 768px) {
-    #main-content-container{padding:15px 0 15px 2em;}
-}
-#main-content-container .col-avatar{text-align:center}
-@media (min-width: 768px) {
-    #main-content-container .col-avatar{text-align:right}
-}
-#main-content-container .col-avatar .avatar{z-index:100;width:150px;height:150px;margin-top:0px;border-radius:100%;box-shadow:0 0 0 0.3em #fff;opacity:1;}
+  .site-sidebar{position:sticky;top:40px;align-self:start}
+    .sidebar-content{display:flex;flex-direction:column;gap:16px}
 
-#main-content-container .col-info{height:100%;align-items:center;display:-webkit-flex;height:150px}
-#main-info-container{padding-top:15px} /* around the name */
-#main-info-container .col-name{text-align:center}
-#main-info-container .col-name .textbox-info{display:inline-block;margin:0 auto;text-align:left}
-#main-info-container .col-name .name{margin:0;color:#566c7f;font-size:1.85em;font-family:"Source Sans Pro",Helvetica,sans-serif}
-#main-info-container .col-name .email{color:#666; font-size:14px}
-#main-info-container .col-link{text-align:center;margin:-5px 0 -25px;}
-#main-info-container .col-link ul {margin:0px auto auto;padding:0;list-style:none;text-align:center}
-#main-info-container .col-link li {display:inline-block;margin:auto;padding:0 10px;color:#ccc;line-height:10px}
-#main-info-container .col-link li a{width:45px;height:45px;color:#ccc;padding:0;font-size:45px;line-height:45px}
-#main-info-container .col-link li a:focus,
-#main-info-container .col-link li a:hover{text-decoration:none;cursor:hand}
-#main-info-container .col-link li a.border{border:1px solid #ccc;border-radius:100%;}
-#main-info-container .col-link li a.padding{padding:0px 0px;font-size:22px}
+    .avatar-wrapper{width:100%;max-width:280px;aspect-ratio:4/5;border-radius:24px;overflow:hidden;border:1px solid var(--line);background:#fff}
+    .avatar-wrapper img{width:100%;height:100%;object-fit:cover;display:block}
+    @media (max-width:899px){.avatar-wrapper{max-width:220px}}
 
-/* Other */
-#main-more-container{background:#ffffff;width:100%;padding:0 30px}
+    .name{font-weight:700;font-size:40px;line-height:1.08;margin:18px 0 8px}
+    .role{font-size:15px;color:var(--muted);letter-spacing:.02em;text-transform:uppercase;margin-top:4px}
 
-#main-bio-container{margin:auto;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px;font-size:1rem;line-height:1.4}
-#main-bio-container .subtitle{margin-top:30px;color:#566c7f}
+    .profile-links ul{list-style:none;padding:0;margin:10px 0 0;display:flex;gap:24px}
+    .profile-links a{font-size:16px}
 
-#misc-container{margin:0 0em;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px;font-size:1rem;line-height:1.4}
-/* #misc-container .subtitle{margin-top:30px;color:#566c7f} */
+    .contact-list{list-style:none;padding:0;margin:14px 0 0}
+    .contact-list li{display:flex;align-items:center;gap:12px;margin:12px 0;color:var(--muted)}
+    .contact-list i{width:18px;text-align:center;color:var(--muted)}
+    .contact-list a{color:var(--muted)}
+    .contact-list a:hover{color:var(--link-hover)}
 
-#main-pub-container{margin:auto;padding: 0 0em;max-width:1080px;text-align:left;padding-top:30px;max-width:1080px}
-#main-pub-container .subtitle{color:#566c7f;}
-#main-pub-container .subtitle a {font-weight:400;font-size:18px}
-#main-pub-container .subtitle a.activated {color:#333333}
-#main-pub-container .subtitle a.activated:focus,
-#main-pub-container .subtitle a.activated:hover {text-decoration:none;cursor:initial}
-#main-pub-container .move-up {margin-top:-0.3cm}
-#main-pub-container .move-up-more {margin-top:-0.5cm}
-#main-pub-container .move-down {margin-top:0.8cm}
 
-#main-pub-container .subtitle-aux {font-size:1rem}
-#main-pub-container .subtitle-aux a.activated {color:#333333}
-#main-pub-container .subtitle-aux a.activated:focus,
-#main-pub-container .subtitle-aux a.activated:hover {text-decoration:none;cursor:initial}
-#main-pub-container .subtitle-aux .note{margin-left:1em;color:#999999;text-decoration:none;font-size:14px}
+  .site-main{ min-width:0; }
+  #main-more-container{ background:transparent; padding:0; }
+  #main-bio-container{ margin:0 auto; max-width:720px; padding-top:0; font-size:16px; }
+  #main-bio-container p{ margin:0 0 18px; }
 
-#main-pub-card-container{}
-#main-pub-card-container>h5{margin-bottom: 20px}
-#main-pub-card-container .pub-card{width: 100%;padding-bottom:15px;font-size:1rem}
-#main-pub-card-container .pub-card .col-l{text-align:center;padding-top:10px}
-#main-pub-card-container .pub-card .col-r{padding-top:10px}
-#main-pub-card-container .pub-card img{width:100%;margin:0 auto}
-#main-pub-card-container .pub-card-body{width:100%;background:transparent;padding-left:0px}
-#main-pub-card-container .pub-card .title{font-weight:600;font-size:1rem;margin-bottom:4px;line-height:1.4}
-#main-pub-card-container .pub-card .authors{font-weight:400;color:#666666;margin-bottom:4px;line-height:1.4}
-#main-pub-card-container .pub-card .authors a{color:#666666}
-#main-pub-card-container .pub-card .authors u{color:#333333;font-weight:600;text-decoration:none}
-#main-pub-card-container .pub-card .conference{color:#333333;font-weight:600}
-#main-pub-card-container .pub-card .note{display:block;color:#999999;text-decoration:none;font-size:12px}
-#main-pub-card-container .pub-card .info{margin-bottom:0;}
-#main-pub-card-container .row{margin:0}
-#main-pub-card-container .col-l,
-#main-pub-card-container .col-r{vertical-align:top;display:inline-block;margin:0;padding-left:0px}
+  #main-pub-container{ margin:40px auto 0; max-width:900px; }
+  #main-pub-container .subtitle{
+    font-family:"EB Garamond",Georgia,serif; font-weight:700; font-size:28px; color:var(--text); margin:8px 0 8px;
+    border-bottom:1px solid var(--line); padding-bottom:8px;
+  }
 
-#footer{padding:1.5em 0 1.5em;min-width:240px;background:#f4f4f4;opacity:0.95;font-size:14px;line-height:12px;text-align:left}
-#footer .container{max-width:540px;padding:0 45px}
-#footer .row{align-items:center}
-#footer .stat{width:90px;overflow:hidden;margin:0 auto;padding:0 15px;}
-#footer .copyright{flex-grow:1;margin:5px auto 5px;text-align:left;display:block;font-size:14px;line-height:1.4}
-#footer a{color:#666666}
-#footer a:hover{color:#333333}
+  #main-pub-card-container{ width:100%; padding:0; margin:4px 0 0; }
+  #main-pub-card-container>h5{ margin-bottom:16px; }
+  .pub-card{
+  width:100%; padding:18px 0; margin:0;
+  border-top:1px solid var(--line); border-bottom:0; border-left:0; border-right:0;
+  background:transparent; box-shadow:none; border-radius:0;
+    }
+    .pub-card .row{
+    display:flex; flex-wrap:nowrap; align-items:flex-start; margin:0;
+    }
+    .pub-card .col-l{
+    flex:0 0 240px; max-width:240px; padding-right:10px; text-align:left;
+    }
+    .pub-card .col-r{
+    flex:1 1 0; min-width:280px; padding-left:0;
+    }
+    @media (max-width:992px){
+    .pub-card .col-l{ flex:0 0 220px; max-width:220px; }
+    }
+    @media (max-width:700px){
+    .pub-card .row{ flex-wrap:wrap; }
+    .pub-card .col-l{ flex:0 0 100%; max-width:100%; padding-right:0; margin-bottom:0; }
+    .pub-card .col-r{ flex:0 0 100%; max-width:100%; }
+    }
 
-.bold{font-weight:600}
-.highlight{color:#BB2222;font-weight:600}
-.highlight:hover{color:#BB2222;font-weight:600}
-.hide{display:none}
-    </style>
+  .pub-img{ width:100%; height:auto; border-radius:8px; object-fit:cover; background:#fff; border:1px solid var(--line); }
+  .pub-card-body{ width:100%; background:transparent; padding-left:0; }
+  .pub-card-body h5.title{
+    font-family:"EB Garamond",Georgia,serif; font-size:20px; font-weight:600; color:var(--text); margin:0 0 6px;
+  }
+  .pub-card-body h6.authors{ font-size:15px; color:var(--muted); margin:0 0 6px; }
+  .pub-card-body p.info{ font-size:15px; color:var(--muted); margin:0; }
+
+  .embodiment-grid{
+    display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px; margin-top:20px; max-width:900px; margin-left:auto; margin-right:auto;
+  }
+  .embodiment-card{ background:transparent; border-radius:12px; border:1px solid var(--line); overflow:hidden; }
+  .embodiment-img{ width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
+  .embodiment-desc{ padding:10px 12px; font-size:14px; color:var(--muted); margin:0; }
+
+  #travel-map{ max-width:1200px; margin:56px auto 32px; padding:0 24px; }
+  #travel-map .subtitle{ font-family:"EB Garamond",Georgia,serif; font-weight:700; font-size:28px; margin:0 0 12px; }
+</style>
+
 </head>
 
 <body>
+  <div class="site-layout">
 
-<!-- <img src="background.jpeg" id="background" class="" /> -->
-
-<div id="main">
-    <!--canvas id="wave-canvas"></canvas-->
-
-    <div id="main-content">
-        <div id="main-content-container" class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-3 col-avatar">
-                <img src="images/blue.jpg" class="avatar" title="Yangcen Liu"/>
-            </div>
-            <div class="col-sm-12 col-md-9 col-info">
-                <div id="main-info-container" class="container">
-                    <div class="row">
-                        <div class="col-md-12 col-xl-6 col-name">
-                            <div class="textbox-info">
-                                <h1 class="name"><span>Yangcen Liu</span></h1>
-                                <p class="email">Email: yliu3735 [at] gatech [dot] edu <br>
-                                <!-- Twitter:  <a href="https://twitter.com/du_yilun">https://twitter.com/du_yilun</a> <br> -->
-                                <!-- Google Scholar:  -->
-                                <a href="https://scholar.google.com/citations?user=Xq-r3dIAAAAJ&hl=en&oi=ao">Google Scholar</a> /
-                                <a href="https://www.linkedin.com/in/yangcenliu/">Linkedin</a>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <aside class="site-sidebar">
+    <div class="sidebar-content">
+        <div class="avatar-wrapper">
+        <img src="images/blue.jpg" alt="Yangcen Liu">
         </div>
+
+        <h1 class="name">Yangcen Liu</h1>
+        <div class="role">M.S. Student · Georgia Tech</div>
+
+        <nav class="profile-links">
+        <ul>
+            <li><a href="#" target="_blank">Blog</a></li>
+            <li><a href="#" target="_blank">CV</a></li>
+        </ul>
+        </nav>
+
+        <ul class="contact-list">
+        <li><i class="fa fa-envelope-o"></i><a href="mailto:yliu3735@gatech.edu">yliu3735@gatech.edu</a></li>
+        <li><i class="fa fa-graduation-cap"></i><a href="https://scholar.google.com/citations?user=Xq-r3dIAAAAJ&hl=en&oi=ao" target="_blank">Google Scholar</a></li>
+        <li><i class="fa fa-twitter"></i><a href="https://x.com/Randle_Liu" target="_blank">https://x.com/Randle_Liu</a></li>
+        <li><i class="fa fa-github"></i><a href="https://github.com/Randle-Github" target="_blank">https://github.com/Randle-Github</a></li>
+        <li><i class="fa fa-linkedin-square"></i><a href="https://www.linkedin.com/in/yangcenliu/" target="_blank">linkedin.com/in/yangcenliu</a></li>
+        </ul>
     </div>
+    </aside>
 
-    <div id="main-more-container">
+
+    <main class="site-main">
+
+      <div id="main-more-container">
         <div id="main-bio-container">
-            <p>
-                <p style="color:red; font-size: 20px; font-weight: bold;">
-                    I am actively seeking a PhD position in Robotics&amp;CV in the USA for Fall 2026!
-                  </p>
-                  
-                I'm currently a master student at <a href="https://www.gatech.edu/">
-                  Gorgia Institute of Technology</a>
-                from 2024 Fall, a member of <a href="https://rl2.cc.gatech.edu/">Robot Learning and Reasoning (RL2) Lab</a> supervised by <a href="https://faculty.cc.gatech.edu/~danfei/">Prof. Danfei Xu</a>. Also, I'm advised by <a href="https://harishravichandar.com/">Prof. Harish Ravichandar</a>.
-              </p>
-        
-              <p>
-                Before that, I obtained my Bachelor Degree from <a href="https://en.uestc.edu.cn/">the University of Electronic Science and Technology of China</a>
-                from 2020 Fall, and I was fortunate to be a member of <a href="https://diggers.ai/">Data Intelligence Group</a> supervised by <a href="https://wenli-vision.github.io/">Prof. Wen Li</a>.
-              </p>
-
-              <p>
-                Besides, I am deeply grateful to <a href="https://scholar.google.com/citations?user=m2k89xgAAAAJ">Prof. Ziyi Liu</a> and <a
-                    href="https://www.yhzhai.com/">Yuanhao Zhai</a> for their invaluable support and guidance during my internship with <a href="https://cse.buffalo.edu/~jsyuan/index.html">Prof. Junsong Yuan</a> at the <a href="https://www.buffalo.edu/">University at Buffalo</a>. They taught me how to be a "researcher".
-              </p>
-        
-              <p>
-                I am working on the field of Robotics and Computer Vision, and I am interested in how to use human priors (especially video demonstration) to make robots smarter.
-                My current research interests include but are not limited to 1) robot learning, and 2) video processing.
-              </p>
-
-              <p>
-                I'm <a href="https://www.16personalities.com/entp-personality">ENTP-A</a>. Outside academia, I love playing sports (Basketball, Badminton) and music (Classic, playing Saxophone), and travelling. I'm a fan of Lebron James (Lakers), Max Verstappen (Red Bull Racing), and C. Ronaldo (Man UNT).
-              </p>
+          <p>
+            <p style="color:red; font-size: 20px; font-weight: bold;">
+              I am actively seeking a PhD position in Robotics&amp;CV in the USA for Fall 2026!
+            </p>
+            I'm currently a master student at <a href="https://www.gatech.edu/">Gorgia Institute of Technology</a>
+            from 2024 Fall, a member of <a href="https://rl2.cc.gatech.edu/">Robot Learning and Reasoning (RL2) Lab</a> supervised by
+            <a href="https://faculty.cc.gatech.edu/~danfei/">Prof. Danfei Xu</a>. Also, I'm advised by
+            <a href="https://harishravichandar.com/">Prof. Harish Ravichandar</a>.
+          </p>
+          <p>
+            Before that, I obtained my Bachelor Degree from <a href="https://en.uestc.edu.cn/">the University of Electronic Science and Technology of China</a>
+            from 2020 Fall, and I was fortunate to be a member of <a href="https://diggers.ai/">Data Intelligence Group</a> supervised by
+            <a href="https://wenli-vision.github.io/">Prof. Wen Li</a>.
+          </p>
+          <p>
+            Besides, I am deeply grateful to <a href="https://scholar.google.com/citations?user=m2k89xgAAAAJ">Prof. Ziyi Liu</a> and
+            <a href="https://www.yhzhai.com/">Yuanhao Zhai</a> for their invaluable support and guidance during my internship with
+            <a href="https://cse.buffalo.edu/~jsyuan/index.html">Prof. Junsong Yuan</a> at the <a href="https://www.buffalo.edu/">University at Buffalo</a>.
+            They taught me how to be a "researcher".
+          </p>
+          <p>
+            I am working on the field of Robotics and Computer Vision, and I am interested in how to use human priors (especially video demonstration) to make robots smarter.
+            My current research interests include but are not limited to 1) robot learning, and 2) video processing.
+          </p>
+          <p>
+            I'm <a href="https://www.16personalities.com/entp-personality">ENTP-A</a>. Outside academia, I love playing sports (Basketball, Badminton) and music (Classic, playing Saxophone), and travelling.
+            I'm a fan of Lebron James (Lakers), Max Verstappen (Red Bull Racing), and C. Ronaldo (Man UNT).
+          </p>
         </div>
-        
+
         <div id="main-pub-container">
-            <h5 class="subtitle">Education
-            </h5>
-
-            <div id="main-pub-card-container" class="hide">
-
+            <h2>Education</h2>
+            <hr>
             <div class="pub-card">
                 <div class="row">
                     <div class="col-l col-xs-12 col-lg-3">
-                        <img src="data/gatech.png" width="100%" class="pub-img" playsinline autoplay muted loop preload/>
+                        <img src="data/gatech.png" width="100%" class="pub-img" alt="Georgia Tech Logo"/>
                     </div>
                     <div class="col-r col-xs-12 col-lg-9">
                         <div class="pub-card-body">
                             <h5 class="title">Georgia Institute of Technology</h5>
-                            Aug 2024 -- June 2026 (Expected)
-                            <h6 class="authors">
-                                Master of Science in Robotics (College of Computing)
-                            </h6>
+                            <p>Aug 2024 – June 2026 (Expected)</p>
+                            <h6 class="authors">Master of Science in Robotics (College of Computing)</h6>
                         </div>
                     </div>
                 </div>
@@ -223,185 +212,23 @@ a:hover{color:#bc6262}
             <div class="pub-card">
                 <div class="row">
                     <div class="col-l col-xs-12 col-lg-3">
-                        <img src="data/uestc_icon.png" width="100%" class="pub-img" playsinline autoplay muted loop preload/>
+                        <img src="data/uestc_icon.png" width="100%" class="pub-img" alt="UESTC Logo"/>
                     </div>
                     <div class="col-r col-xs-12 col-lg-9">
                         <div class="pub-card-body">
-                            <h5 class="title">University of Electronic Science and Technology of China </h5>
-                            Sep 2020 -- June 2024
-                            <h6 class="authors">
-                                Bachelor of Engineering in Artificial Intelligence (College of Computer Science)
-                            </h6>
+                            <h5 class="title">University of Electronic Science and Technology of China</h5>
+                            <p>Sep 2020 – June 2024</p>
+                            <h6 class="authors">Bachelor of Engineering in Artificial Intelligence (College of Computer Science)</h6>
                         </div>
                     </div>
                 </div>
             </div>
-                
         </div>
-        
-        <style>
-            .pub-type-header {
-                font-size: 20px;
-                font-weight: 600;
-                margin-top: 20px;
-                margin-bottom: 10px;
-                padding-left: 8px;
-                border-left: 5px solid #e74c3c;
-                color: #2c3e50;
-            }
-        
-            .main-pub-card-container {
-                width: 100%;
-                padding: 0;
-                margin: 0;
-            }
-        
-            .pub-card {
-                width: 100%;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                padding-left: 2px;
-                padding-right: 2px;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                border: 1px solid #ddd;
-                border-radius: 8px;
-                box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.06);
-                background-color: #fafafa;
-                box-sizing: border-box; /* ✅ 防止 padding+border 撑破总宽度 */
-            }
-        
-            /* Ensure internal elements don't break the margin consistency */
-            .pub-card * {
-                margin-top: 0;
-                margin-bottom: 0;
-            }
-        
-            .pub-card-body h5.title {
-                font-size: 16px;
-                font-weight: 600;
-                color: #34495e;
-                margin-bottom: 8px;
-            }
-        
-            .col-r > * {
-                margin-left: 5px;   /* 或者 padding-left:12px; 都行 */
-            }
 
-            .pub-card-body h6.authors {
-                font-size: 14px;
-                color: #555;
-                margin-bottom: 6px;
-            }
-        
-            .pub-card-body p.info {
-                font-size: 14px;
-                color: #666;
-            }
-        
-            .conference {
-                font-weight: 500;
-                color: #2980b9;
-            }
-        
-            .pub-img {
-                width: 100%;
-                max-width: 100%; /* ✅ 避免在小屏上撑出卡片 */
-                height: auto;
-                border-radius: 4px;
-                object-fit: cover;
-                margin-bottom: 10px;
-                background-color: #fff; /* ✅ 白色背景填补透明区域 */
-            }
-        
-            .col-l {
-                padding-right: 8px;
-            }
-        
-            .col-r {
-                padding-left: 8px;
-            }
-        
-            .row {
-                display: flex;
-                flex-wrap: wrap; /* ✅ 小屏下自动换行 */
-            }
-        
-            @media (max-width: 768px) {
-                .col-l,
-                .col-r {
-                    width: 100%;         /* ✅ 竖排布局 */
-                    padding: 0 !important;
-                }
-            }
-
-        .pub-img-wrapper {
-            align-items: center;
-            display: flex;
-            width: 100%;
-            height: 100%;
-            border-radius: 8px;
-            overflow: hidden;          /* ✅ 裁剪超出圆角部分 */
-        }
-
-        .pub-img {
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: cover;
-            background-color: #fff;
-        }
-
-        .pub-card .row {
-            margin-left: 0;   /* 去掉 Bootstrap 默认 -15px */
-            margin-right: 0;  /* 同上 */
-        }
-
-        .pub-card .col-l,
-        .pub-card .col-r {
-            padding-left: 0;  /* 卡片内部列不再需要左右 padding */
-            padding-right: 0;
-        }
-
-        .embodiment-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-
-        .embodiment-card {
-            background: #fafafa;
-            border-radius: 12px;
-            box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
-            overflow: hidden;
-            text-align: center;
-            transition: transform 0.2s ease;
-        }
-
-        .embodiment-card:hover {
-            transform: translateY(-4px);
-        }
-
-        .embodiment-img {
-            width: 100%;
-            aspect-ratio: 1.2;
-            object-fit: cover;
-            display: block;
-        }
-
-        .embodiment-desc {
-            padding: 10px 12px;
-            font-size: 14px;
-            color: #333;
-            margin: 0;
-        }
-
-        </style>
         
         
         <div id="main-pub-container">
-            <h5 class="subtitle">Publications & Preprints</h5>
+            <h2>Publications & Preprints</h2>
             <p style="font-size: 14px; color: gray; margin-top: 10px;">
             <sup>*</sup> Equal contribution &nbsp;&nbsp; <sup>†</sup> Corresponding author
             </p>
@@ -426,7 +253,8 @@ a:hover{color:#bc6262}
                                 <p class="info">
                                     <span class="conference">CoRL 2025, RSS 2025 Dex WS <strong>Spotlight (Oral)</strong></span> /
                                     <a href="https://sites.google.com/view/immimic">Project Page</a> / 
-                                    <a href="https://openreview.net/pdf/71eeb1380524067a776d1c563ac1a37bf0f94f98.pdf">Paper</a><br>
+                                    <a href="https://openreview.net/pdf/71eeb1380524067a776d1c563ac1a37bf0f94f98.pdf">Paper</a> / 
+                                    <a href="https://www.youtube.com/watch?v=7a5HYjQ4wJo">Talk Recording</a><br>
                                     ImMimic is an embodiment-agnostic co-training framework designed to bridge the domain gap between 
                                     large-scale human videos and limited robot demonstrations. By leveraging DTW for human-to-robot mapping and MixUp-based interpolation 
                                     for domain adaptation, ImMimic significantly enhances task performance across both embodiments.
@@ -474,7 +302,7 @@ a:hover{color:#bc6262}
                                 <h5 class="title">STAT: Towards Generalizable Temporal Action Localization</h5>
                                 <h6 class="authors"><strong>Yangcen Liu</strong>, Ziyi Liu<sup>†</sup>, Yuanhao Zhai, Wen Li, David Doerman, Junsong Yuan</h6>
                                 <p class="info">
-                                    <span class="conference">In Submission</span> /
+                                    <span class="conference">Arxiv</span> /
                                     <a href="http://export.arxiv.org/abs/2404.13311">Paper</a><br>
                                     STAT is a self-supervised teacher-student framework for weakly-supervised temporal action localization, designed to improve 
                                     generalization across diverse distributions. It integrates iterative refinement and alignment modules to adapt to varying 
@@ -540,7 +368,7 @@ a:hover{color:#bc6262}
 
 
         <div id="main-pub-container">
-            <h5 class="subtitle">Experience</h5>
+            <h2>Experience</h2>
 
             <div id="main-pub-card-container">
 
@@ -631,7 +459,7 @@ a:hover{color:#bc6262}
         </div>
 
         <div id="main-pub-container">
-            <h5 class="subtitle">Teaching</h5>
+            <h2>Teaching</h2>
         
             <div id="main-pub-card-container">
 
@@ -678,378 +506,83 @@ a:hover{color:#bc6262}
         </div>
 
         <div style="height: 20px;"></div>
-    </div>
-    
 
+        <section id="embodiment" class="container" style="max-width:1080px;padding-top:30px;">
+  <div id="main-pub-container">
+    <h2>Embodiment Experience</h2>
+
+    <div class="embodiment-grid">
+      <a href="https://franka.de/" target="_blank" style="text-decoration:none;color:inherit;">
+        <div class="embodiment-card">
+          <img src="data/robots/franka.png" class="embodiment-img" />
+          <p class="embodiment-desc">Franka Emika Panda - A classic 7-DoF torque-controlled arm for precision manipulation.</p>
+        </div>
+      </a>
+
+      <a href="https://www.kinovarobotics.com/product/gen3-robots" target="_blank" style="text-decoration:none;color:inherit;">
+        <div class="embodiment-card">
+          <img src="data/robots/Kinova.png" class="embodiment-img" />
+          <p class="embodiment-desc">Kinova Gen3 - A modular and lightweight 7-DoF robotic arm with ROS-native control. Small but flexible.</p>
+        </div>
+      </a>
+
+      <a href="https://www.rainbow-robotics.com/en_rby1" target="_blank" style="text-decoration:none;color:inherit;">
+        <div class="embodiment-card">
+          <img src="data/robots/rainbow.png" class="embodiment-img" />
+          <p class="embodiment-desc">RB-Y1 - Wheeled dual-arm humanoid robot designed for agile mobile manipulation in diverse environments.</p>
+        </div>
+      </a>
+    </div>
+
+    <div class="embodiment-grid">
+      <a href="https://robotiq.com/products/adaptive-grippers" target="_blank" style="text-decoration:none;color:inherit;">
+        <div class="embodiment-card">
+          <img src="data/robots/robotiq.png" class="embodiment-img" />
+          <p class="embodiment-desc">Robotiq 2F-85 - A claasic parallel gripper with robust industrial design for versatile grasping.</p>
+        </div>
+      </a>
+
+      <a href="https://source-robotics.com/blogs/blog/soft-robotic-grippers-fin-ray-effect?srsltid=AfmBOorHTLxJ4sm318jSHfdO6NPSzLnrEIQSmH2YCU1uoWYPrSN0IP-r" target="_blank" style="text-decoration:none;color:inherit;">
+        <div class="embodiment-card">
+          <img src="data/robots/finray.png" class="embodiment-img" />
+          <p class="embodiment-desc">Fin Ray Gripper - A robust gripper. Compliant finger structure inspired by fish fins for enveloping grasps.</p>
+        </div>
+      </a>
+
+      <a href="https://www.allegrohand.com/" target="_blank" style="text-decoration:none;color:inherit;">
+        <div class="embodiment-card">
+          <img src="data/robots/allegro.png" class="embodiment-img" />
+          <p class="embodiment-desc">Allegro Hand - 16-DoF anthropomorphic hand for dexterous manipulation and learning.</p>
+        </div>
+      </a>
+
+      <a href="https://www.psyonic.io/" target="_blank" style="text-decoration:none;color:inherit;">
+        <div class="embodiment-card">
+          <img src="data/robots/ability.png" class="embodiment-img" />
+          <p class="embodiment-desc">Ability Hand - 6-DoF high-performance bionic hand designed for both prosthetics and research.</p>
+        </div>
+      </a>
+
+      <a href="https://www.robotera.com/en/goods1/4.html" target="_blank" style="text-decoration:none;color:inherit;">
+        <div class="embodiment-card">
+          <img src="data/robots/xhand.png" class="embodiment-img" />
+          <p class="embodiment-desc">XHAND - Five-finger robotic hand with 12-DoF, enabling dexterous manipulation and precise finger control.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+    </main>
+  </div>
+
+  <section id="travel-map" class="container" style="max-width:950px;padding-top:30px;">
+  <h5 class="subtitle">I shall tread this wondrous world!</h5>
+  <iframe style="width:100%;height:480px;border:none;"
+          src="https://www.google.com/maps/d/u/0/embed?mid=1Iik_qZzMt-zOv61n2a3TN7vaaYoEkPU&ll=1.3987233352870305%2C0&z=2">
+  </iframe>
+</section>
 
 </div>
 
 
-<!-- Embodiment Experience Section -->
-<div class="container">
-    <div id="main-pub-container">
-        <h5 class="subtitle">Embodiment Experience</h5>
-
-        <div class="embodiment-grid">
-            <!-- Robot Card 1 -->
-            <!-- Robot Card 1 -->
-            <a href="https://franka.de/" target="_blank" style="text-decoration: none; color: inherit;">
-                <div class="embodiment-card">
-                    <img src="data/robots/franka.png" class="embodiment-img" />
-                    <p class="embodiment-desc">Franka Emika Panda - A classic 7-DoF torque-controlled arm for precision manipulation.</p>
-                </div>
-            </a>
-
-            <!-- Robot Card 2 -->
-            <a href="https://www.kinovarobotics.com/product/gen3-robots" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="embodiment-card">
-                <img src="data/robots/Kinova.png" class="embodiment-img" />
-                <p class="embodiment-desc">Kinova Gen3 - A modular and lightweight 7-DoF robotic arm with ROS-native control. Small but flexible.</p>
-            </div>
-            </a> 
-
-            <!-- Robot Card 3 -->
-            <a href="https://www.rainbow-robotics.com/en_rby1" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="embodiment-card">
-                <img src="data/robots/rainbow.png" class="embodiment-img" />
-                <p class="embodiment-desc">RB-Y1 - Wheeled dual-arm humanoid robot designed for agile mobile manipulation in diverse environments.</p>
-            </div>
-            </a>
-        </div>
-
-        <div class="embodiment-grid">
-            <!-- Robot Card 4 -->
-            <a href="https://robotiq.com/products/adaptive-grippers" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="embodiment-card">
-                <img src="data/robots/robotiq.png" class="embodiment-img" />
-                <p class="embodiment-desc">Robotiq 2F-85 - A claasic parallel gripper with robust industrial design for versatile grasping.</p>
-            </div>
-            </a>
-
-            <!-- Robot Card 5 -->
-            <a href="https://source-robotics.com/blogs/blog/soft-robotic-grippers-fin-ray-effect?srsltid=AfmBOorHTLxJ4sm318jSHfdO6NPSzLnrEIQSmH2YCU1uoWYPrSN0IP-r" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="embodiment-card">
-                <img src="data/robots/finray.png" class="embodiment-img" />
-                <p class="embodiment-desc">Fin Ray Gripper - A robust gripper. Compliant finger structure inspired by fish fins for enveloping grasps.</p>
-            </div>
-            </a>
-
-            <!-- Robot Card 6 -->
-            <a href="https://www.allegrohand.com/?gad_source=1&gad_campaignid=21343116219&gbraid=0AAAAA9UNdCzzAvJcVDl2EACV-dtzCsOFs&gclid=CjwKCAjw56DBBhAkEiwAaFsG-mQPYph8mjwN4PlvelAatC__R6TJnSAohTcR-Wcu9D_kJ3DIMUwjrRoCliEQAvD_BwE" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="embodiment-card">
-                <img src="data/robots/allegro.png" class="embodiment-img" />
-                <p class="embodiment-desc">Allegro Hand - 16-DoF anthropomorphic hand for dexterous manipulation and learning.</p>
-            </div>
-            </a>
-
-            <!-- Robot Card 7 -->
-            <a href="https://www.psyonic.io/" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="embodiment-card">
-                <img src="data/robots/ability.png" class="embodiment-img" />
-                <p class="embodiment-desc">Ability Hand - 6-DoF high-performance bionic hand designed for both prosthetics and research.</p>
-            </div>
-            </a>
-
-            <!-- Robot Card 7 -->
-            <a href="https://www.robotera.com/en/goods1/4.html" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="embodiment-card">
-                <img src="data/robots/xhand.png" class="embodiment-img" />
-                <p class="embodiment-desc">XHAND - Five-finger robotic hand with 12-DoF, enabling dexterous manipulation and precise finger control.</p>
-            </div>
-            </a>
-
-        </div>
-    </div>
-</div>
-
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I shall tread this wondrous world!</title>
-    <style>
-        /* 设置页面主体的最大宽度和居中对齐 */
-        body {
-            display: flex;
-            justify-content: center;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 950px;
-            width: 100%;
-            text-align: center;
-        }
-        iframe {
-            width: 100%;
-            height: 480px;
-            border: none;
-        }
-    </style>
-</head>
-<body>
-    <div class="container">
-        <h1>I shall tread this wondrous world!</h1>
-        <!-- 嵌入 Google Maps -->
-        <iframe 
-            src="https://www.google.com/maps/d/u/0/embed?mid=1Iik_qZzMt-zOv61n2a3TN7vaaYoEkPU&ll=1.3987233352870305%2C0&z=2">
-        </iframe>
-    </div>
-</body>
-</html>
-
-
-
-
-
-<!-- -------------------------------------------- -->
-<!-- -------------------------------------------- -->
-<!-- -------------------------------------------- -->
-
-
-
-<!-- jQuery first, then Tether, then Bootstrap JS. -->
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
-        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
-        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-<script type="text/javascript" src="static/js/jquery.color.min.js"></script>
-<script type="text/javascript">
-
-$.fn.isInViewport = function() {
-    var elementTop = $(this).offset().top;
-    var elementBottom = elementTop + $(this).outerHeight();
-    var viewportTop = $(window).scrollTop();
-    var viewportBottom = viewportTop + $(window).height();
-    return elementBottom > viewportTop && elementTop < viewportBottom;
-};
-
-var allPublications = null;
-
-function publicationBySelected() {
-    var a = $("#publication-by-selected")
-    if (a.hasClass("activated")) {
-        return ;
-    }
-
-    $("#main-pub-container .subtitle a").removeClass("activated");
-    $("#main-pub-container .subtitle-aux a").removeClass("activated");
-    a.addClass("activated");
-
-    $("#main-pub-card-container").html("");
-    for (var pubId = 0; pubId < allPublications.length; pubId++) {
-        var pub = $(allPublications[pubId]);
-        if (pub.data("selected") == true) {
-            $("#main-pub-card-container").append(pub);
-        }
-    }
-}
-
-function publicationByDate() {
-    var a = $("#publication-by-date")
-    if (a.hasClass("activated")) {
-        return ;
-    }
-
-    $("#main-pub-container .subtitle a").removeClass("activated");
-    $("#main-pub-container .subtitle-aux a").removeClass("activated");
-    a.addClass("activated");
-
-    $("#main-pub-card-container").html("");
-    for (var pubId = 0; pubId < allPublications.length; pubId++) {
-        if (pubId == 0 || $(allPublications[pubId-1]).data("year") != $(allPublications[pubId]).data("year")) {
-            var year = $(allPublications[pubId]).data("year");
-            $("#main-pub-card-container").append($("<h5 id='year-" + year.toString() + "'>" + year.toString() + "</h5>"));
-        }
-        $("#main-pub-card-container").append(allPublications[pubId]);
-    }
-}
-
-function publicationByTopicInner() {
-    var a = $("#publication-by-topic")
-    if (a.hasClass("activated")) {
-        return ;
-    }
-    $("#main-pub-container .subtitle a").removeClass("activated");
-    a.addClass("activated");
-
-    $("#main-pub-card-container").html("");
-    for (var topicId in allTopics) {
-        var topic = allTopics[topicId].name;
-        var topicTitle = allTopics[topicId].title;
-        // var topicTitle = topic.split("-").map(function (a) { return a[0].toUpperCase() + a.substr(1).toLowerCase(); }).join(" ");
-        $("#main-pub-card-container").append($("<h5 id='topic-" + topic + "'>" + topicTitle + "</h5>"));
-        for (var pubId = 0; pubId < allPublications.length; pubId++) {
-            var pub = $(allPublications[pubId]);
-            if (pub.data("topic").indexOf(topic) != -1) {
-                $("#main-pub-card-container").append(pub);
-            }
-        }
-    }
-}
-
-function publicationByTopicSpecificInner(a) {
-    if ($(a).hasClass("activated")) {
-        return false;
-    }
-
-    $("#main-pub-container .subtitle-aux a").removeClass("activated");
-    $(a).addClass("activated");
-}
-
-function publicationByTopic() {
-    publicationByTopicInner();
-    publicationByTopicSpecificInner($("#main-pub-container .subtitle-aux a:first"));
-    return true;
-}
-
-function publicationByTopicSpecific(a) {
-    publicationByTopicInner();
-    publicationByTopicSpecificInner(a);
-
-    var hash = a.hash;
-    $(hash).prop('id', hash.substr(1) + '-noscroll');
-    window.location.hash = hash;
-    $(hash + '-noscroll').prop('id', hash.substr(1));
-
-    if (!$(hash).isInViewport()) {
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 1000, function(){
-        });
-    }
-
-    return false;
-}
-
-$(function() {
-    getRealSize = function(bgImg) {
-        var img = new Image();
-        img.src = bgImg.attr("src");
-        var width = img.width,
-            height = img.height;
-        return {
-            width: width,
-            height: height
-        }
-    };
-
-    getRealWindowSize = function() {
-        var winWidth = null,
-            winHeight = null;
-        if (window.innerWidth) winWidth = window.innerWidth;
-        else if ((document.body) && (document.body.clientWidth)) winWidth = document.body.clientWidth;
-        if (window.innerHeight) winHeight = window.innerHeight;
-        else if ((document.body) && (document.body.clientHeight)) winHeight = document.body.clientHeight;
-        if (document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
-            winHeight = document.documentElement.clientHeight;
-            winWidth = document.documentElement.clientWidth
-        }
-        return {
-            width: winWidth,
-            height: winHeight
-        }
-    };
-
-    fullBg = function() {
-        var bgImg = $("#background");
-        var mainContainer = $("#main");
-        var firstFire = null;
-
-        function resizeImg() {
-            var realSize = getRealSize(bgImg);
-            var imgWidth = realSize.width;
-            var imgHeight = realSize.height;
-
-            if (imgWidth == 0 || imgHeight == 0) {
-                setTimeout(function() {
-                    resizeImg();
-                }, 200);
-            }
-
-            console.log(realSize);
-            var realWinSize = getRealWindowSize();
-            var winWidth = realWinSize.width;
-            var winHeight = realWinSize.height;
-            var widthRatio = winWidth / imgWidth;
-            var heightRatio = winHeight / imgHeight;
-            console.log(realWinSize);
-            if (widthRatio > heightRatio) {
-                bgImg.width(imgWidth * widthRatio + 'px').height(imgHeight * widthRatio + 'px').css({'top':
-                    -(imgHeight * widthRatio - winHeight) / 10 * 5 + 'px', 'left': '0'})
-            } else {
-                bgImg.width(imgWidth * heightRatio + 'px').height(imgHeight * heightRatio + 'px').css({'left':
-                    -(imgWidth * heightRatio - winWidth) / 10 * 3 + 'px', 'top': '0'})
-            }
-            // mainContainer.css({
-            //     width: winWidth,
-            //     height: winHeight
-            // });
-        }
-
-        resizeImg();
-        window.onresize = function() {
-            if (firstFire === null) {
-                firstFire = setTimeout(function() {
-                    resizeImg();
-                    firstFire = null
-                }, 100)
-            }
-        }
-    };
-
-    targetColor = $("#main-content-container .col-info .name").css("color");
-    animatedLink = function(speed) {
-        $("#main-content-container .col-link li").hover(function() {
-            $(this).find('.icon').animate({
-                color: targetColor,
-                borderColor: targetColor
-            }, speed);
-            $(this).find('.caption').animate({
-                color: targetColor
-            })
-        }, function() {
-            $(this).find('.icon').animate({
-                borderColor: '#cccccc',
-                color: '#cccccc'
-            }, speed);
-            $(this).find('.caption').animate({
-                color: '#cccccc'
-            })
-        })
-    };
-
-    fullBg();
-    animatedLink(400);
-
-    allPublications = $("#main-pub-card-container .pub-card");
-    allTopicsLink = $("#main-pub-container .subtitle-aux a");
-    allTopics = [];
-    for (var topicId = 0; topicId < allTopicsLink.length; topicId++) {
-        allTopics.push({name: $(allTopicsLink[topicId]).data("topic"), title: $(allTopicsLink[topicId]).html()});
-    }
-
-    $("#publication-by-selected").click();
-    // $("#publication-by-date").click();
-    $("#main-pub-card-container").removeClass("hide");
-});
-</script>
-
-
-<div id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="copyright" style="text-align: center;">
-                Website template from <a href="https://devinluo27.github.io/">Yunhao Luo</a>.
-            </div>
-        </div>
-    </div>
-</div>
-
-</body>
-</html>
