@@ -58,8 +58,6 @@
     .site-sidebar{ position:static; top:auto; }
     }
 
-
-  .site-sidebar{position:sticky;top:40px;align-self:start}
     .sidebar-content{display:flex;flex-direction:column;gap:16px}
 
     .avatar-wrapper{width:100%;max-width:280px;aspect-ratio:4/5;border-radius:24px;overflow:hidden;border:1px solid var(--line);background:#fff}
@@ -133,6 +131,14 @@
 
   #travel-map{ max-width:1200px; margin:56px auto 32px; padding:0 24px; }
   #travel-map .subtitle{ font-family:"EB Garamond",Georgia,serif; font-weight:700; font-size:28px; margin:0 0 12px; }
+
+  @media (min-width:900px){
+    .site-sidebar{ position:sticky; top:32px; align-self:start; }
+    }
+    @media (max-width:899px){
+    .site-sidebar{ position:static; top:auto; }
+    }
+
 </style>
 
 </head>
