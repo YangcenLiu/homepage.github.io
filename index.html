@@ -132,26 +132,28 @@
   #travel-map{ max-width:1200px; margin:56px auto 32px; padding:0 24px; }
   #travel-map .subtitle{ font-family:"EB Garamond",Georgia,serif; font-weight:700; font-size:28px; margin:0 0 12px; }
 
-    @media (min-width:900px){
-    .site-layout{ align-items:start; }
-    .site-sidebar{
-        position:relative;
-        top:auto;
-        height:calc(100vh - 48px);
-        overflow:auto;
-        min-height:0;
-    }
-    .site-main{ min-height:0; }
-    }
+@media (min-width:900px){
+  .site-layout{ align-items:start; }
+  .site-sidebar{
+    position: sticky;
+    top: 32px;
+    max-height: calc(100vh - 32px);
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior: contain;
+    padding-bottom: 30px;
+  }
+}
 
-    @media (max-width:899px){
-    .site-sidebar{
-        position:static;
-        top:auto;
-        height:auto;
-        overflow:visible;
-    }
-    }
+@media (max-width:899px){
+  .site-sidebar{
+    position: static;
+    top: auto;
+    max-height: none;
+    overflow: visible;
+  }
+}
+
 
 
 </style>
@@ -170,12 +172,6 @@
         <h1 class="name">Yangcen Liu</h1>
         <div class="role">M.S. Student · Georgia Tech</div>
 
-        <nav class="profile-links">
-        <ul>
-            <li><a href="#" target="_blank">Blog</a></li>
-            <li><a href="#" target="_blank">CV</a></li>
-        </ul>
-        </nav>
 
         <ul class="contact-list">
         <li><i class="fa fa-envelope-o"></i><a href="mailto:yliu3735@gatech.edu">yliu3735@gatech.edu</a></li>
