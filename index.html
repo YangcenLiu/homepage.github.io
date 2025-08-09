@@ -59,9 +59,9 @@
         position: static;
         top: auto;
         max-height: none;
-        overflow: visible;
-        margin: 0 auto;        /* 居中整个 sidebar */
-        text-align: center;    /* 居中里面的文字和图片 */
+        overflow: auto;
+        margin: 0 auto;
+        text-align: center;
     }
     }
 
@@ -141,14 +141,18 @@
 
 @media (min-width:900px){
   .site-layout{ align-items:start; }
+  .site-layout > .site-sidebar,
+  .site-layout > .site-main{ min-height:0; }
+
   .site-sidebar{
     position: sticky;
     top: 32px;
-    max-height: calc(100vh - 32px);
+    max-height: calc(100vh - 32px - 24px);
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     overscroll-behavior: contain;
     padding-bottom: 30px;
+    scrollbar-width: none;
   }
 }
 
@@ -157,7 +161,7 @@
     position: static;
     top: auto;
     max-height: none;
-    overflow: visible;
+    overflow: auto;
   }
 }
 
