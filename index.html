@@ -55,7 +55,14 @@
     }
 
     @media (max-width:899px){
-    .site-sidebar{ position:static; top:auto; }
+        .site-sidebar{
+        position: static;
+        top: auto;
+        max-height: none;
+        overflow: visible;
+        margin: 0 auto;        /* 居中整个 sidebar */
+        text-align: center;    /* 居中里面的文字和图片 */
+    }
     }
 
     .sidebar-content{display:flex;flex-direction:column;gap:16px}
