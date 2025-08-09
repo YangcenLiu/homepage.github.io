@@ -37,17 +37,27 @@
   a:hover{ color:var(--link-hover); text-decoration:underline; }
   .hide{display:none}
 
-  .site-layout{
+    .site-layout{
     display:grid;
-    grid-template-columns:0.2fr 3fr;
-    gap:48px;
+    grid-template-columns: 1fr; /* 默认手机端单栏 */
+    gap:32px;
     max-width:1120px;
     margin:0 auto;
-    padding:48px 24px 24px;
-  }
-  @media (min-width:900px){
-    .site-layout{ grid-template-columns:220px minmax(0,3fr); gap:100px; }
-  }
+    padding:24px 16px 24px;
+    }
+
+    @media (min-width:900px){
+    .site-layout{
+        grid-template-columns: 220px minmax(0, 3fr); /* 大屏双栏 */
+        gap:100px;
+        padding:48px 24px 24px;
+    }
+    }
+
+    @media (max-width:899px){
+    .site-sidebar{ position:static; top:auto; }
+    }
+
 
   .site-sidebar{position:sticky;top:40px;align-self:start}
     .sidebar-content{display:flex;flex-direction:column;gap:16px}
@@ -532,7 +542,7 @@
           <p class="embodiment-desc">RB-Y1 - Wheeled dual-arm humanoid robot designed for agile mobile manipulation in diverse environments.</p>
         </div>
       </a>
-      
+
       <a href="https://robotiq.com/products/adaptive-grippers" target="_blank" style="text-decoration:none;color:inherit;">
         <div class="embodiment-card">
           <img src="data/robots/robotiq.png" class="embodiment-img" />
